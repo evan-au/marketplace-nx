@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/add-item"],
+      "outputs": [
+        "dist/libs/add-item"
+      ],
       "options": {
         "project": "libs/add-item/ng-package.json",
         "tailwindConfig": "libs/add-item/tailwind.config.js"
@@ -23,7 +25,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/add-item"],
+      "outputs": [
+        "coverage/libs/add-item"
+      ],
       "options": {
         "jestConfig": "libs/add-item/jest.config.js",
         "passWithNoTests": true

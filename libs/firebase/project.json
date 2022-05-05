@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/firebase"],
+      "outputs": [
+        "dist/libs/firebase"
+      ],
       "options": {
         "project": "libs/firebase/ng-package.json"
       },
@@ -22,7 +24,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/firebase"],
+      "outputs": [
+        "coverage/libs/firebase"
+      ],
       "options": {
         "jestConfig": "libs/firebase/jest.config.js",
         "passWithNoTests": true

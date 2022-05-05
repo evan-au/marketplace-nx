@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "marketplace-b10bc": {
+      "hosting": {
+        "marketplace": [
+          "marketplace-b10bc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "marketplace-b10bc"
+  }
+}

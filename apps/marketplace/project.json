@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/marketplace",
         "index": "apps/marketplace/src/index.html",
@@ -92,7 +94,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/marketplace"],
+      "outputs": [
+        "coverage/apps/marketplace"
+      ],
       "options": {
         "jestConfig": "apps/marketplace/jest.config.js",
         "passWithNoTests": true
@@ -186,6 +190,16 @@
         "android": {
           "cmd": "update android"
         }
+      }
+    },
+    "deploy": {
+      "executor": "@angular/fire:deploy",
+      "options": {
+        "prerender": false,
+        "ssr": false,
+        "browserTarget": "marketplace:build:production",
+        "firebaseProject": "marketplace-b10bc",
+        "firebaseHostingSite": "marketplace-b10bc"
       }
     }
   },

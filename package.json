@@ -64,6 +64,7 @@
     "@capacitor/core": "^3.2.5",
     "@ionic/angular": "^5.8.3",
     "rxjs": "~7.4.0",
+    "swiper": "^8.1.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
   }

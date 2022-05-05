@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'gallery-ui',
+  selector: 'ui-selector',
   templateUrl: './ui.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

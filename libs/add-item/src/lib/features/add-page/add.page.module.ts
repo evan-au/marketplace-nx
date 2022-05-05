@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Components
 import { AddPageComponent } from './add.page';
+import { AddItemFormComponent } from '../../ui/add-item-form/add-item-form.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AddPageComponent],
+  declarations: [AddPageComponent, AddItemFormComponent],
   imports: [CommonModule, IonicModule, RouterModule.forChild(routes)],
 })
 export class AddPageModule {}

@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Components
 import { HomePageComponent } from './home.page';
+import { ItemCardComponent } from '../../ui/item-card/item-card.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomePageComponent],
+  declarations: [HomePageComponent, ItemCardComponent],
   imports: [CommonModule, IonicModule, RouterModule.forChild(routes)],
 })
 export class HomePageModule {}

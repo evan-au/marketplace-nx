@@ -3,6 +3,7 @@
   "projects": {
     "add-item": "libs/add-item",
     "auth": "libs/auth",
+    "firebase": "libs/firebase",
     "home": "libs/home",
     "marketplace": "apps/marketplace",
     "marketplace-e2e": "apps/marketplace-e2e"

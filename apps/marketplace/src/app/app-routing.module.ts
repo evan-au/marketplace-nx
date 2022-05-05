@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./tabs/tabs.module').then((m) => m.TabsPageModule),
   },
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('@marketplace-nx/auth').then((m) => m.AuthModule),
+  },
 ];
 @NgModule({
   imports: [

@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'gallery-feature',
+  selector: 'feature-selector',
   templateUrl: './feature.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

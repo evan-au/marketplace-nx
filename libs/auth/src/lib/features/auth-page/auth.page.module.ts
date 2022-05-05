@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Components
 import { AuthPageComponent } from './auth.page';
+import { SignInComponent } from '../../ui/sign-in/sign-in.component';
+import { SignUpComponent } from '../../ui/sign-up/sign-up.component';
 
 const routes: Routes = [
   {
@@ -14,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AuthPageComponent],
+  declarations: [AuthPageComponent, SignInComponent, SignUpComponent],
   imports: [CommonModule, IonicModule, RouterModule.forChild(routes)],
 })
 export class AuthPageModule {}

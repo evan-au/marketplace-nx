@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "add-item": "libs/add-item",
     "auth": "libs/auth",
     "home": "libs/home",
     "marketplace": "apps/marketplace",

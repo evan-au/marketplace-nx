@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 
 @Component({
@@ -6,7 +7,10 @@ import { ModalController } from '@ionic/angular';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CartModalComponent implements OnInit {
-  constructor(private modalController: ModalController) {}
+  constructor(
+    private modalController: ModalController,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     return;
@@ -14,5 +18,11 @@ export class CartModalComponent implements OnInit {
 
   dismissModal() {
     this.modalController.dismiss();
+  }
+
+  handleCheckout() {
+    this.router.navigate(['checkout']).then(() => {
+      this.dismissModal();
+    });
   }
 }

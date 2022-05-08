@@ -1,0 +1,43 @@
+{
+  "projectType": "library",
+  "root": "libs/checkout",
+  "sourceRoot": "libs/checkout/src",
+  "prefix": "marketplace-nx",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/checkout"],
+      "options": {
+        "project": "libs/checkout/ng-package.json",
+        "tailwindConfig": "libs/checkout/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/checkout/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/checkout/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/checkout"],
+      "options": {
+        "jestConfig": "libs/checkout/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/checkout/src/**/*.ts",
+          "libs/checkout/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

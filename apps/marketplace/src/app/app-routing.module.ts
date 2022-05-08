@@ -12,6 +12,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('@marketplace-nx/auth').then((m) => m.AuthModule),
   },
+  {
+    path: 'checkout',
+    loadChildren: () =>
+      import('@marketplace-nx/checkout').then((m) => m.CheckoutModule),
+  },
 ];
 @NgModule({
   imports: [

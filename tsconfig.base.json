@@ -17,6 +17,7 @@
     "paths": {
       "@marketplace-nx/add-item": ["libs/add-item/src/index.ts"],
       "@marketplace-nx/auth": ["libs/auth/src/index.ts"],
+      "@marketplace-nx/checkout": ["libs/checkout/src/index.ts"],
       "@marketplace-nx/firebase": ["libs/firebase/src/index.ts"],
       "@marketplace-nx/home": ["libs/home/src/index.ts"]
     }

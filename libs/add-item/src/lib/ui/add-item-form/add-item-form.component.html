@@ -1,7 +1,136 @@
 <ion-content>
-  <swiper>
-    <ng-template swiperSlide>Slide 1</ng-template>
-    <ng-template swiperSlide>Slide 2</ng-template>
-    <ng-template swiperSlide>Slide 3</ng-template>
-  </swiper>
+  <div class="h-full p-4">
+    <swiper
+      #swiper
+      [config]="config"
+      class="h-full w-full border border-gray-200 rounded-md"
+    >
+      <ng-template swiperSlide
+        ><div class="h-full w-full">
+          <ion-grid class="h-full">
+            <ion-row class="h-4/5 ion-align-items-center">
+              <ion-col>
+                <div class="mb-10">
+                  <ion-text>
+                    <p class="text-2xl">
+                      Provide a <span class="text-blue-500">product</span> name
+                    </p>
+                  </ion-text>
+                </div>
+                <div>
+                  <ion-item>
+                    <ion-input class="text-center text-xl"></ion-input>
+                  </ion-item>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="h-1/5 ion-align-items-center">
+              <ion-col>
+                <ion-button fill="outline" (click)="slideNext()"
+                  >Next</ion-button
+                >
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div></ng-template
+      >
+      <ng-template swiperSlide
+        ><div class="h-full w-full">
+          <ion-grid class="h-full">
+            <ion-row class="h-4/5 ion-align-items-center">
+              <ion-col>
+                <div class="mb-10">
+                  <img src="assets/image-placeholder.svg" alt="Product image" />
+                </div>
+                <div>
+                  <ion-button expand="block" fill="clear" shape="round">
+                    Select the product image
+                  </ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="h-1/5 ion-align-items-center">
+              <ion-col>
+                <ion-button fill="outline" (click)="slidePrev()"
+                  >Back</ion-button
+                >
+              </ion-col>
+              <ion-col>
+                <ion-button fill="outline" (click)="slideNext()"
+                  >Next</ion-button
+                >
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div></ng-template
+      >
+      <ng-template swiperSlide
+        ><div class="h-full w-full">
+          <ion-grid class="h-full">
+            <ion-row class="h-4/5 ion-align-items-center">
+              <ion-col>
+                <div class="mb-10">
+                  <ion-text>
+                    <p class="text-2xl">
+                      Provide the
+                      <span class="text-blue-500">product</span> price?
+                    </p>
+                  </ion-text>
+                </div>
+                <div>
+                  <ion-item>
+                    <ion-input class="text-center text-xl"></ion-input>
+                  </ion-item>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="h-1/5 ion-align-items-center">
+              <ion-col>
+                <ion-button fill="outline" (click)="slidePrev()"
+                  >Back</ion-button
+                >
+              </ion-col>
+              <ion-col>
+                <ion-button fill="outline" (click)="slideNext()"
+                  >Next</ion-button
+                >
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div></ng-template
+      >
+      <ng-template swiperSlide
+        ><div class="h-full w-full">
+          <ion-grid class="h-full">
+            <ion-row class="h-4/5 ion-align-items-center">
+              <ion-col>
+                <div class="mb-4">
+                  <ion-text>
+                    <p class="text-2xl">
+                      Describe the <span class="text-blue-500">product</span>
+                    </p>
+                  </ion-text>
+                </div>
+                <div>
+                  <ion-item>
+                    <ion-textarea rows="3" class="text-xl"></ion-textarea>
+                  </ion-item>
+                </div>
+              </ion-col>
+            </ion-row>
+            <ion-row class="h-1/5 ion-align-items-center">
+              <ion-col>
+                <ion-button fill="outline" (click)="slidePrev()"
+                  >Back</ion-button
+                >
+              </ion-col>
+              <ion-col>
+                <ion-button [disabled]="true" color="success">Save product</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div></ng-template
+      >
+    </swiper>
+  </div>
 </ion-content>

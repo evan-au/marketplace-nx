@@ -1,20 +1,25 @@
 <ion-card>
   <img src="assets/image-placeholder.svg" class="p-4" />
   <ion-card-header>
-    <ion-card-subtitle>Username</ion-card-subtitle>
-    <ion-card-title>Product name</ion-card-title>
+    <ion-card-subtitle>Merchant</ion-card-subtitle>
+    <ion-card-title class="font-bold flex justify-between">
+      <p>Product name</p>
+      <p class="text-gray-500">250 PLN</p>
+    </ion-card-title>
   </ion-card-header>
   <ion-card-content>
-    <p>Price in PLN</p>
     <p class="ion-text-justify">
       Product description:- Lorem ipsum dolor sit amet consectetur adipisicing
       elit.
     </p>
   </ion-card-content>
 
-  <ion-row class="ion-justify-content-center">
-    <ion-col>
-      <ion-button fill="clear" expand="block"> View </ion-button>
+  <ion-row class="ion-justify-content-end">
+    <ion-col size="4">
+      <ion-button fill="clear">
+        <ion-icon slot="end" name="arrow-forward-outline"></ion-icon>
+        View
+      </ion-button>
     </ion-col>
   </ion-row>
 </ion-card>

@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cart</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="dismissModal()" fill="clear">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+  <home-cart-item></home-cart-item>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="font-bold">
+      <span class="text-sm font-normal text-gray-500">Total</span> 2000
+      PLN</ion-title
+    >
+    <ion-buttons slot="primary">
+      <ion-button fill="outline" color="primary">
+        <ion-icon slot="start" name="card-outline"></ion-icon>
+        Checkout
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
